@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Page2() {
   return (
     <div className="min-h-screen w-full">
-      <div className="container">
-        <div className="flex justify-center items-center h-full mt-20">
+      {/* <div className="container"> */}
+        <div className="flex justify-center items-center h-full mt-10">
           <Image src="/avatar.svg" alt="аватар" width={70} height={70} />
           <h2 className="text-lg text-center ml-4">Иванова Екатерина</h2>
         </div>
@@ -13,7 +13,7 @@ export default function Page2() {
           Мои учебники | Физика
         </div>
         <AccordionPickSubject />
-      </div>
+      {/* </div> */}
     </div>
   );
 }

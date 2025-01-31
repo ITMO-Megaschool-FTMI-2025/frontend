@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { FolderClosed } from "lucide-react"
 import dynamic from "next/dynamic"
+import Image from "next/image";
 
 const Confetti = dynamic(() => import("react-confetti"), { ssr: false })
 
@@ -36,8 +37,8 @@ const BottomSheet: React.FC = () => {
   }, [])
 
   return (
-    <div className="relative h-screen">
-      <Button onClick={openSheet}>Назначить</Button>
+    <div className="relative ">
+      <Button className="bg-[#34413D] text-black text-md text-white w-auto self-start mt-5  rounded-[40px] border-2 border-neutral-300 py-2" onClick={openSheet}> <Image src="/people.svg" alt="ученики" width={20} height={20} /><p>Назначить</p></Button>
 
       <AnimatePresence>
         {isOpen && (
@@ -66,7 +67,7 @@ const BottomSheet: React.FC = () => {
             >
               <div className="p-4 h-[80vh] overflow-y-auto w-full">
                 <div className="w-12 h-1.5 bg-gray-300 rounded-full mx-auto mb-6" />
-                <h2 className="text-[17px] mx-auto font-bold mb-4 text-white">Назначить</h2>
+                <h2 className="text-[17px] mx-auto font-bold mb-4 text-white">Выбрать классы</h2>
                 <div className="w-full flex flex-col space-y-4">
                   {items.map((item) => (
                     <div key={item.id} className="flex flex-row justify-between items-center">
