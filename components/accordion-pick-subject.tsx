@@ -52,6 +52,36 @@ export default function AccordionPickSubject() {
             </p>
           </div>
         </AccordionContent>
+        <AccordionContent>
+          <div className='flex flex-row items-center gap-3'>
+            <div className='w-[40px] h-[40px] bg-[#00D2A0] flex items-center rounded-xl'>
+              <FolderClosed className='mx-auto text-black' />
+            </div>
+            <p className='text-[16px]'>
+              Квантовая физика
+            </p>
+          </div>
+        </AccordionContent>
+        <AccordionContent>
+          <div className='flex flex-row items-center gap-3'>
+            <div className='w-[40px] h-[40px] bg-[#00D2A0] flex items-center rounded-xl'>
+              <FolderClosed className='mx-auto text-black' />
+            </div>
+            <p className='text-[16px]'>
+              Атомная физика
+            </p>
+          </div>
+        </AccordionContent>
+        <AccordionContent>
+          <div className='flex flex-row items-center gap-3'>
+            <div className='w-[40px] h-[40px] bg-[#00D2A0] flex items-center rounded-xl'>
+              <FolderClosed className='mx-auto text-black' />
+            </div>
+            <p className='text-[16px]'>
+              Элементы астрофизики
+            </p>
+          </div>
+        </AccordionContent>
       </AccordionItem>
     </Accordion>
   )
