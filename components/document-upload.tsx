@@ -124,7 +124,7 @@ export default function DocumentUpload() {
       </div>
       {isUploaded && (
         <div className="w-full mt-8">
-          <Link href="/page1">
+          <Link href="/page2">
             <Button className="bg-[#00D2A0] w-full text-black">
               Продолжить
             </Button>
