@@ -68,13 +68,18 @@ export default function DocumentUpload() {
   return (
     <div className="container mx-auto p-4 max-w-2xl">
       <div className="space-y-3">
+      <div className="flex justify-center items-center h-full mt-20">
+      <Image src="/avatar.svg" alt="аватар" width={70} height={70} />
+      <h2 className="text-lg text-center ml-4">Иванова Екатерина</h2>
+      </div>
+      <div className="text-2xl  text-center pt-5 pb-5">Загрузить новый материал</div>
         <div>
           <Label htmlFor="category" className="">Категория</Label>
-          <Input id="category" type="text" placeholder="Физика" className="opacity-10 my-0" />
+          <Input id="category" type="text" placeholder="Учебники" className="bg-transparent text-white placeholder-white placeholder-opacity-100 border border-white" />
         </div>
-        <div>
+        <div className="pb-10">
           <Label htmlFor="description">Описание</Label>
-          <Input id="description" type="text" placeholder="Учебник по физике для 8 класса." className="opacity-10" />
+          <Input id="description" type="text" placeholder="Учебник по физике для 9 класса" className="bg-transparent text-white placeholder-white placeholder-opacity-100 border border-white" />
         </div>
 
         <div
@@ -106,7 +111,7 @@ export default function DocumentUpload() {
           <div className="flex items-center space-x-4">
             <Image src="/placeholder.svg" alt="Учебник.pdf" width={40} height={40} className="my-auto" />
             <div className="flex-grow">
-              <p className="font-semibold">Физика_8_учебник.pdf</p>
+              <p className="font-semibold">Физика_9_учебник.pdf</p>
               <div className="flex flex-row w-full items-center">
                 <p className="text-sm text-gray-500">{isUploading ? `${fileSize} / 42` : "42"} MB</p>
                 {isUploaded && <CheckCircle className="w-6 h-6 mx-2 text-green-500" />}
