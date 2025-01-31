@@ -68,7 +68,7 @@ export default function DocumentUpload() {
   return (
     <div className="container mx-auto p-4 max-w-2xl">
       <div className="space-y-3">
-      <div className="flex justify-center items-center h-full mt-20">
+      <div className="flex justify-center items-center h-full mt-10">
       <Image src="/avatar.svg" alt="аватар" width={70} height={70} />
       <h2 className="text-lg text-center ml-4">Иванова Екатерина</h2>
       </div>
