@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@astraicons/react": "^0.8.0",
+    "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-progress": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.5",

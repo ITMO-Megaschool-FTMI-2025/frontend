@@ -10,6 +10,7 @@ import { Progress } from "@/components/ui/progress"
 import { CloudUpload, CheckCircle, Loader2, ArrowUpIcon } from "lucide-react"
 import type React from "react"
 import { Button } from "./ui/button"
+import Link from "next/link"
 
 export default function DocumentUpload() {
   const [isDragging, setIsDragging] = useState(false)
@@ -123,7 +124,11 @@ export default function DocumentUpload() {
       </div>
       {isUploaded && (
         <div className="w-full mt-8">
-          <Button className="bg-[#00D2A0] w-full text-black">Продолжить</Button>
+          <Link href="/page1">
+            <Button className="bg-[#00D2A0] w-full text-black">
+              Продолжить
+            </Button>
+          </Link>
         </div>
       )}
     </div>

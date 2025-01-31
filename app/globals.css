@@ -4,8 +4,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #101214;
-  color: #F2F4F5;
+  background: black;
+  color: white;
 }
 
 @layer base {
