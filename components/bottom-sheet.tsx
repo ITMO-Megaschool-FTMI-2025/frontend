@@ -76,7 +76,7 @@ const BottomSheet: React.FC = () => {
                         </div>
                         <p className="text-white">{item.name}</p>
                       </div>
-                      <Button onClick={() => toggleChosen(item.id)} variant={item.isChosen ? "secondary" : "default"}>
+                      <Button onClick={() => toggleChosen(item.id)}>
                         {item.isChosen ? "Выбрано" : "Назначить"}
                       </Button>
                     </div>
